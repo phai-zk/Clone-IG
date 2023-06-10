@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    color: #fff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.black {
+    background: #000;
+}
+
+nav {
+    padding: 8px 12px 20px 8px;
+    border-right: 0.8px solid var(--border-c);
+}
+
+nav * a {
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav * a:not(.icon):hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav a img {
+    width: 24px;
+    border-radius: 100%;
+}
+
+.p {
+    padding: 10.75px 10px;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+main {
+    overflow-y: scroll;
+}
+
+.color
+{
+    color: var(--color);
+}
+
+.w-per
+{
+    width: var(--width);
+}
+
+.h-per
+{
+    height: var(--height);
+}
+
+.Explore .box
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.imgbox
+{
+    overflow: hidden;
+    margin: 0 .125rem;
+}
+
+.imgbox > img
+{
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+
+}
+
+.col-sp
+{
+    grid-area: var(--row) / var(--col) / span 2 / span 1;
+}
+
+.d-none
+{
+    display: none;
+}
